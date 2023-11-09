@@ -1,0 +1,209 @@
+.intro {
+  display: flex;
+  height: 100vh;
+  background-color: #e9c46a;
+
+  .i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ 
+    .i-left-wrapper {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      
+
+      .i-intro {
+        font-size: 30px;
+        font-weight: 300;
+        
+      }
+
+      .i-name {
+        font-size: 35px;
+        margin-bottom: 5px;
+      }
+
+      .i-title {
+        height: 50px;
+        overflow: hidden;
+
+        .i-title-wrapper {
+          height: 100%;
+          animation: move 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes move {
+          // 25% {
+          //   transform: translateY(-50px);
+          // }
+          // 50% {
+          //   transform: translateY(-100px);
+          // }
+          // 75% {
+          //   transform: translateY(-150px);
+          // }
+          // 100% {
+          //   transform: translateY(-200px);
+          // }
+          50% {
+            transform: translateY(-50px);
+          }
+          100% {
+            transform: translateY(-100px);
+          }
+        }
+
+        .i-title-item {
+          height: 50px;
+          font-size: 30px;
+          font-weight: bold;
+          // color: rgb(175, 94, 2);
+          // color: rgb(0, 66, 128);
+          color: #264653;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .i-social-profiles {
+        margin-top: 10px;
+        cursor: pointer;
+        display: flex;
+
+        .icon {
+          font-size: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .i-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .i-img {
+      width: 70%;
+      height: 70%;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+      // clip-path: polygon(0% 50%, 50% 0%, 50% 25%, 100% 25%, 100% 75%, 50% 75%, 50% 100%, 0% 50%);
+      // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%, 25% 50%, 50% 75%, 75% 50%, 50% 25%);
+      // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+
+
+      background-image: url("../../img/ekaterina.jpg");
+      background-size: cover;
+      cursor: pointer;
+      border: solid 5px;
+      border-color: #e9c46a;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .intro {
+    flex-direction: column;
+
+    .i-left {
+      flex: 1;
+      .i-left-wrapper {
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+
+        .i-intro {
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        .i-name {
+          font-size: 19px;
+          margin-bottom: 5px;
+        }
+
+        .i-title {
+          .i-title-item {
+            font-size: 20px;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .i-right {
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .intro {
+    flex-direction: column;
+
+    .i-left {
+      .i-left-wrapper {
+        align-items: center;
+        justify-content: center;
+
+        .i-intro {
+          font-size: 30px;
+        }
+        .i-name {
+          font-size: 40px;
+        }
+
+        .i-title {
+          .i-title-item {
+            font-size: 35px;
+            justify-content: center;
+          }
+        }
+
+        .i-social-profiles {
+          margin-top: 15px;
+          .icon {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+
+    .i-right {
+      .i-img {
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 993px) {
+  .intro {
+    .i-left {
+      .i-left-wrapper {
+        .i-name {
+          font-size: 28px;
+        }
+
+        .i-social-profiles {
+          .icon {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+
+    .i-right {
+      flex: 1.2;
+    }
+  }
+}
