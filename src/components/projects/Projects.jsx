@@ -18,12 +18,12 @@ const Projects = () => {
               >
                 Code
               </button>
-              {/* <button
+              <button
                 className="p-button"
                 onClick={() => window.open(p.demo, "_blank")}
               >
                 Demo
-              </button> */}
+              </button>
             </div>
           </div>
         ))}

@@ -18,7 +18,7 @@ export const projects = [
     description:
       "Weather App is a single page application where user can check weather in any city in real time. Application build with NEXT JS, OpenWeatherMap API and Tailwind CSS for styling.",
     code: "https://github.com/KShilina/weatherapp/tree/main/weatherapp",
-    demo: " ",
+    demo: "https://weatherapp-ekaterina.vercel.app/ ",
     img: weatherapp,
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     description:
       "The Jungle is a Full-Stack shopping application using Rails with Stripe payment integration.",
     code: "https://github.com/KShilina/Jungle-Project",
-    demo: "",
+    demo: "https://github.com/KShilina/Jungle-Project",
     img: jungle,
   },
   {
@@ -34,7 +34,7 @@ export const projects = [
     description:
       "Interview Scheduler is a single-page application (SPA) that allows users to book technical interviews between students and mentors.",
     code: "https://github.com/KShilina/scheduler",
-    demo: "",
+    demo: "https://interview-scheduler-ekaterina.netlify.app/",
     img: scheduler,
   },
   {
@@ -42,7 +42,7 @@ export const projects = [
     description: "A portal where users can create, take and share quizzes.",
     code: "https://github.com/KShilina/Quiz-App",
     // demo: "https://kshilina.github.io/quiz/",
-    demo: "",
+    demo: "https://github.com/KShilina/Quiz-App",
     img: quiz,
   },
 ];
