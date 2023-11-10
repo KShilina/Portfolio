@@ -46,6 +46,6 @@
     ]
   },
   "devDependencies": {
-    "homepage": "https://portfolio-qkj7mit44-kshilina.vercel.app/"
+    "gh-pages": "^4.0.0"
   }
 }
