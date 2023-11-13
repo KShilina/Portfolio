@@ -59,7 +59,7 @@ function Intro() {
             }}
             className="i-social-profiles"
           >
-            <div className="i-linkedin" style={{ color: "#0B65C2" }}>
+            <div className="i-linkedin" style={{ color: "#000000" }}>
               <LinkedInIcon
                 className="icon"
                 onClick={() => handleSocialClick("linkedin")}
